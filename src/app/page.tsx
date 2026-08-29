@@ -5,13 +5,13 @@ import { links, profile } from "@/lib/profile";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen justify-center px-4 py-16">
+    <main className="flex min-h-screen justify-center px-6 py-20">
       <DarkModeToggle />
-      <div className="flex w-full max-w-sm flex-col items-center gap-8 rounded-3xl border border-gray-200 bg-white/60 p-8 shadow-sm dark:border-neutral-800 dark:bg-neutral-900/40">
+      <div className="flex w-full max-w-sm flex-col items-center gap-10">
         <ProfileHeader
           name={profile.name}
           bio={profile.bio}
-          avatarInitial={profile.avatarInitial}
+          avatarUrl={profile.avatarUrl}
         />
         <LinkList links={links} />
       </div>
